@@ -4,6 +4,9 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   font-family: Roboto;
+  a {
+    text-decoration: none;
+  }
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -50,6 +53,9 @@ img {
       margin-right: 20px;
     }
     p {
+    text-decoration: none !important;
+    display: flex;
+    flex-direction: column;
     align-content: center;
     }
   }
@@ -74,7 +80,7 @@ img {
     .main-header__button-explore {
       width: auto;
       padding: 0px 15px;
-      background-color: #9356DC;
+      background: linear-gradient(to bottom, #FF79DA, #9356DC);
       border-radius: 50px;
       p {
         color: white;
@@ -140,7 +146,6 @@ img {
       align-items: center;
       width: 100%;
       .restaurant-container__card {
-        height:260px;
         width: 340px;
         overflow: hidden;
         background-color: white;
@@ -148,7 +153,64 @@ img {
         border-radius: 20px;
         box-sizing: border-box; /* Pour que padding et le border soient à l'interieur de la div et ne changent pas sa taille*/
         margin-bottom: 20px;
+        .img {
+        height: 200px;
+        }
+        .restaurant__text {
+          // text-decoration: none;
+          position: relative;
+          height: 70px;
+          h4, p {
+            margin: 10px 20px;
+            color: black;
+            // text-decoration: none;
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: space-around;
+            // margin: 10px 20px;
+          }
+          i {
+            position: absolute;
+            right: 30px; top: 20px;
+          }
+          i :hover {
+            color: linear-gradient(to right, #FF79DA, #9356DC);
+            transform: scale(1.02);
+            cursor: pointer;
+          }
+        }
       }
     }
   }
+}
+
+.footer {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-end;
+  background-color: rgb(46, 44, 44);
+  height: 250px;
+  h2 {
+  font-family: shrikhand;
+  color: white;
+  margin: 0px;
+  padding: 30px 20px;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  .footer__links__link {
+    margin-bottom: 20px;
+    color: white;
+  }
+  span {
+    margin-left: 15px; 
+    .first {
+      margin-left: 50px;
+    }
+  }
+}
 }
