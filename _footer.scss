@@ -1,0 +1,30 @@
+.footer {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-end;
+    background-color: rgb(46, 44, 44);
+    height: 250px;
+    h2 {
+    font-family: shrikhand;
+    color: white;
+    margin: 0px;
+    padding: 30px 20px;
+  }
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    .footer__links__link {
+      margin-bottom: 20px;
+      color: white;
+    }
+    span {
+      margin-left: 15px; 
+      .first {
+        margin-left: 50px;
+      }
+    }
+  }
+  }

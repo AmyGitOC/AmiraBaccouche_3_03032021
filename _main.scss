@@ -1,0 +1,122 @@
+.main {
+    .main__main-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #faf4f4;
+      padding-top: 10px;
+      padding-bottom: 40px;
+      h2 {
+        text-align: center;
+      }
+      h4 {
+        text-align: center;
+        font-weight: 300;
+      }
+      .main-header__button-explore {
+        width: auto;
+        padding: 0px 15px;
+        background: linear-gradient(to bottom, #FF79DA, #9356DC);
+        border-radius: 50px;
+        p {
+          color: white;
+          // font-weight: bold;
+        }
+  
+      }
+    }
+    .Main__resa-steps {
+      h2 {
+        padding: 20px;
+        padding-top: 30px;
+        margin-bottom: 0px;
+      }
+      .fonctionnement-steps {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      .step {
+        position: relative;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 35px;
+        width: 80%;
+        box-shadow: 0 5px 10px 0 #00000050;
+        font-weight: bold;
+        background-color: #faf4f4;
+        border-radius: 25px;
+      }
+      span {
+        position: absolute;
+        left: -19.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 38.9833px;
+        padding: 15px;
+        color: white;
+        background-color: #9356DC;
+        border-radius: 50px;
+      }
+      i {
+        margin-right: 15px;
+        }
+      .fastore {
+        i{
+          color: #9356DC;
+        }
+      }
+    }
+    .main__restaurant-container{
+      background-color: #F2F2F2;
+      padding: 20px;
+      .restaurant-container__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .restaurant-container__card {
+          width: 340px;
+          overflow: hidden;
+          background-color: white;
+          box-shadow: 0px 0px 17px #00000021;
+          border-radius: 20px;
+          box-sizing: border-box; /* Pour que padding et le border soient à l'interieur de la div et ne changent pas sa taille*/
+          margin-bottom: 20px;
+          .img {
+          height: 200px;
+          }
+          .restaurant__text {
+            // text-decoration: none;
+            position: relative;
+            height: 70px;
+            h4, p {
+              margin: 10px 20px;
+              color: black;
+              // text-decoration: none;
+              // display: flex;
+              // flex-direction: row;
+              // justify-content: space-around;
+              // margin: 10px 20px;
+            }
+            i {
+              position: absolute;
+              right: 30px; top: 20px;
+            }
+            i :hover {
+              color: linear-gradient(to right, #FF79DA, #9356DC);
+              transform: scale(1.02);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
