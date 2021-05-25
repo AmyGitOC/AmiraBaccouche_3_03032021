@@ -1,10 +1,18 @@
-@import 'header';
-@import 'main';
-@import 'footer';
-@import 'restaurants/restaurant';
+@media screen and (max-width: 650px){
+  @import 'header';
+  @import 'main';
+  @import 'footer';
+  @import 'restaurants/restaurant';
+}
+
+@media screen and (min-width: 650px){
+  @import 'desktop-header';
+  @import 'desktop-main';
+  @import 'footer';
+}
 
 html {
-  max-width: 650px;
+  // max-width: 650px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
