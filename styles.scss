@@ -1,14 +1,14 @@
-@media screen and (max-width: 650px){
-  @import 'header';
-  @import 'main';
-  @import 'footer';
-  @import 'restaurants/restaurant';
-}
 
-@media screen and (min-width: 650px){
-  @import 'desktop-header';
-  @import 'desktop-main';
-  @import 'footer';
+@import 'scss/header';
+@import 'scss/main';
+@import 'scss/footer';
+@import 'restaurants/scss/styles';
+
+
+@media screen and (min-width: 651px){
+  @import 'scss/desktop-header';
+  @import 'scss/desktop-main';
+  @import 'scss/footer';
 }
 
 html {
@@ -21,11 +21,12 @@ html {
     text-decoration: none;
   }
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
-  }
+}
   
 body {
   width: 100%;
@@ -33,6 +34,7 @@ body {
   background-color: white;
   margin: 0px;
 }
+
 img {
   width: 100%;
 }
