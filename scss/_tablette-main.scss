@@ -44,7 +44,7 @@
     h2 {
       // padding: 20px;
       // padding-top: 30px;
-      margin-bottom: 0px;
+      margin-bottom: 30px;
       margin-top: 50px;
       text-align: center;
     }
@@ -58,21 +58,22 @@
     }
     .step {
       position: relative;
-      height: 75px;
+      height: 90px;
       display: flex;
       align-items: center;
-      justify-content: flex-start;
-      padding-left: 35px;
-      width: 20%;
+      justify-content: center;
+      padding-left: 0px;
+      width: 150px;
       box-shadow: 0 5px 10px 0 #00000050;
       font-weight: bold;
       background-color: #faf4f4;
       border-radius: 25px;
+      text-align: center;
     }
     span {
       position: absolute;
-      top: 18px;
-      left: -19.5px;
+      top: -19.2px;
+      left: 55.35px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -81,17 +82,11 @@
       color: white;
       background-color: #9356DC;
       border-radius: 50px;
-     i {
-      //  display: inline-flex;
-      margin-right: 15px;
     }
-    .fastore {
-      i {
-        color: #9356DC;
-      }
+
+    i {
+        display: none;
     }
-  }
-   
   }
   .main__restaurant-container{
     display: flex;
@@ -112,7 +107,7 @@
       flex-direction: row;
       justify-content: flex-start;
         align-items: center;
-        width: 993px; // 993 px Taille de la cate et des marges * 3 pour avoir un tab de 3 cartes 
+        width: 662; // 662 px Taille de la cate et des marges * 2 pour avoir un tab de 2 cartes 
       // width: 80%;
       // border: 1px solid red;
       .restaurant-container__card {
@@ -125,6 +120,7 @@
         margin: 20px;
         .img {
         height: 200px;
+        object-fit: cover;
         }
         .restaurant__text {
           // text-decoration: none;

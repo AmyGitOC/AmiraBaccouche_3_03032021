@@ -1,15 +1,28 @@
 
+
+// Mode tablette
+@media screen  and (min-width:651px) {
+@import 'scss/desktop-header';
+@import 'scss/tablette-main'; 
+@import 'scss/footer';
+}  
+
+// Mode desktop
+@media screen  and (min-width:1000px) {
+@import 'scss/desktop-header';
+@import 'scss/desktop-main';
+@import 'scss/footer';
+}
+
+  // Mode smartphone (défaut)
+@media screen and (max-width: 650px){
 @import 'scss/header';
 @import 'scss/main';
 @import 'scss/footer';
 @import 'restaurants/scss/styles';
-
-
-@media screen and (min-width: 651px){
-  @import 'scss/desktop-header';
-  @import 'scss/desktop-main';
-  @import 'scss/footer';
 }
+
+
 
 html {
   // max-width: 650px;
