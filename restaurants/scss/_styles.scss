@@ -42,21 +42,30 @@ body {
 		.h2resto {
 			margin-bottom: 0px;
 		}
-		i {
-			font-size: x-large;
-			padding: 0px 20px;
-		}
-		.bloc-intitule {
-			display:flex;
-			flex-direction: row;
-			justify-content: space-between;
-			height: 70px;
-			box-shadow: 0 3px 10px 0 #00000020;
-			margin: 10px;
-			padding: 10px;
-			background-color: white;
-			border-radius: 20px;
-		}
+
+		.coeur-vide, .coeur-plein{
+			position: absolute;
+			right: 50px; 
+			top: 50px;
+			transform: translate(50%, -50%);
+			font-size: 22px;
+			color: rgb(20, 20, 20);
+			text-align: center;
+		  }
+		  .coeur-plein {
+			color:  transparent;
+			font-size: 26px;
+		  }
+		  .coeur-plein:hover {
+			background-image: linear-gradient(to top, #FF79DA, #9356DC);
+			background-size: 100%;
+			background-repeat: repeat;
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent; 
+			-moz-background-clip: text;
+			-moz-text-fill-color: transparent;
+		  }
 		h3 {
 			margin-top: 40px;
 			font-weight: normal;
@@ -71,48 +80,138 @@ body {
 			margin: -18px 0 12px 0;
 			background-color: #99E2D0;
 		}
-		.text-intitule {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-around;
-		}
-		.intitule-pp {
-			font-weight: bold;
-		}
-		.price {
-			margin: 0px;
-			// background-color: red;
-			font-weight: bold;
-		}
-	
-		.pre-footer {
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-			height: 300px;
-			padding-bottom: 100px;
-			background-color: #F2F2F2;
-			vertical-align: middle;
-			.order-button {
-				height: 50px;
-				width: 200px;
-				padding: 0px 15px;
-				background: linear-gradient(to bottom, #FF79DA, #9356DC);
-				border-radius: 50px;
-				p {
-					text-align: center;
-					// vertical-align: middle;
-					margin: 0px;
-					padding: 10px;
+
+		.bloc-intitule:hover {
+			.valid {
+				margin-right: 0px;
+				i {
 					color: white;
-					// font-weight: bold;
+					font-size: xx-large;
+					transform: rotate(360deg);
+				}
+			}
+
+
+
+
+
+			
+		}
+		.bloc-intitule {
+			display:flex;
+			align-items: center;
+			flex-direction: row;
+			justify-content: space-between;
+			height: 70px;
+			box-shadow: 0 3px 10px 0 #00000020;
+			margin: 10px;
+			padding: 10px;
+			padding-right: 0px;
+			background-color: white;
+			border-radius: 20px;
+			overflow: hidden;
+			.text-intitule {
+				display: flex;
+				height: 100%;
+				flex-grow: 1;
+				transition: all 1s;
+				transition-timing-function: ease-out;
+				width: 85%;
+				flex-direction: column;
+				justify-content: space-around;
+				// border: 1px solid blue;
+				.intitule-pp {
+					font-weight: bold;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis; 
+				}
+				.sous-intitule {
+					white-space: nowrap; 
+					overflow: hidden;
+					text-overflow: ellipsis; 
+				}
+			}
+			.price {
+				display: flex;
+				align-self: flex-end;
+				margin: 0px;
+				width: 15%;
+				// background-color: red;
+				font-weight: bold;
+				// border: 1px solid red;
+			}
+			.valid {
+				display: flex;
+				justify-content: center;
+				width: 15%;
+				height: 150%;
+				margin-right: -15%;
+				transition: all 1s;
+				transition-timing-function: ease-out;
+				background: #99E2D0;
+				border: 1px solid #99E2D0;
+				i {
+					color: white;
+					display: flex;
+					align-items: center;
+					padding: 0px;
+					transition: all 1s;
+					// transition-timing-function: ease-out;
 				}
 			}
 		}
 	}
+	.pre-footer {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 300px;
+		padding-bottom: 100px;
+		background-color: #F2F2F2;
+		vertical-align: middle;
+		.order-button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 50px;
+			width: 200px;
+			padding: 0px 15px;
+			background: linear-gradient(to bottom, #FF79DA, #9356DC);
+			border-radius: 50px;
+			p {
+				text-align: center;
+				// vertical-align: middle;
+				margin: 0px;
+				padding: 10px;
+				color: white;
+				// font-weight: bold;
+			}
+		}
+	}
 }
+@media screen  and (min-width:1000px) {
+	.img {
+		height: 500px;
+	}
+	.text-menu{
+		padding: 30px;
+		.menu-parts {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: auto;
+			.menu-part {
+				.bloc-intitule {
+				width: 300px;
+				}
+			}
+		}
+	}
+	.pre-footer {
+	padding-bottom: 0px !important;
+	height: 200px !important;
+	}
 
 
-// .h2resto {
-// 	font-family: roboto;
-// }
+}

@@ -89,35 +89,60 @@
         border-radius: 20px;
         box-sizing: border-box; /* Pour que padding et le border soient à l'interieur de la div et ne changent pas sa taille*/
         margin-bottom: 20px;
-        .img {
-          height: 200px;
-          object-fit: cover;
-        }
-        .restaurant__text {
-          // text-decoration: none;
-          position: relative;
-          height: 70px;
-          h4, p {
-            margin: 10px 20px;
-            color: black;
+        .card__restaurant {
+          .img {
+            height: 200px;
+            object-fit: cover;
+          }
+          .restaurant__text {
             // text-decoration: none;
-            // display: flex;
-            // flex-direction: row;
-            // justify-content: space-around;
-            // margin: 10px 20px;
-          }
-          i {
-            position: absolute;
-            right: 30px; top: 20px;
-            transform: scale(0.5);
-          }
-          i:hover {
-            color: green;
-            background-color: red;
-            transform: scale(1.02);
-            cursor: pointer;
-            transition: transform 250ms ease;
-            animation: grow-plus 250ms;
+            position: relative;
+            height: 70px;
+            h4, p {
+              margin: 10px 20px;
+              color: black;
+              // text-decoration: none;
+              // display: flex;
+              // flex-direction: row;
+              // justify-content: space-around;
+              // margin: 10px 20px;
+            }
+            .coeur-vide, .coeur-plein{
+              position: absolute;
+              right: 30px; 
+              top: 20px;
+              transform: translate(50%, -50%);
+              font-size: 22px;
+              color: rgb(20, 20, 20);
+              text-align: center;
+            }
+            .coeur-plein {
+              color:  transparent;
+              font-size: 26px;
+            }
+            .coeur-plein:hover {
+              background-image: linear-gradient(to top, #FF79DA, #9356DC);
+              background-size: 100%;
+              background-repeat: repeat;
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent; 
+              -moz-background-clip: text;
+              -moz-text-fill-color: transparent;
+            }
+            // i:hover {
+              // color: transparent;
+              // background-color: green;
+              // background: linear-gradient(to bottom, #FF79DA, #9356DC);
+              // overflow: hidden;
+              // cursor: pointer;
+              // transition: transform 250ms ease;
+              // animation: grow-plus 250ms;
+              // overflow: hidden;
+             // transition: transform 250ms ease;
+              // animation: grow-plus 250ms;
+              // overflow: hidden;
+            // }
           }
         }
       }
