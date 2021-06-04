@@ -564,6 +564,9 @@ body {
   .text-menu {
     padding: 30px;
   }
+  .text-menu .restaurant-name h2 {
+    padding-left: 20px;
+  }
   .text-menu .menu-parts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -575,6 +578,12 @@ body {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: auto;
+  }
+  .text-menu .menu-parts .menu-part h3 {
+    padding-left: 15px;
+  }
+  .text-menu .menu-parts .menu-part .underline {
+    margin-left: 15px;
   }
   .text-menu .menu-parts .menu-part .bloc-intitule {
     width: 300px;
