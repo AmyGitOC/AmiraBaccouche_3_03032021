@@ -118,6 +118,10 @@
         border-radius: 20px;
         box-sizing: border-box; /* Pour que padding et le border soient à l'interieur de la div et ne changent pas sa taille*/
         margin: 20px;
+        .new {
+          position: absolute;
+          top: 15px; left: 165px; 
+        }
         .img {
         height: 200px;
         object-fit: cover;

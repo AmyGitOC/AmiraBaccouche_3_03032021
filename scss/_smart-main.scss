@@ -82,6 +82,7 @@
       align-items: center;
       width: 100%;
       .restaurant-container__card {
+        position: relative;
         width: 340px;
         overflow: hidden;
         background-color: white;
@@ -89,6 +90,21 @@
         border-radius: 20px;
         box-sizing: border-box; /* Pour que padding et le border soient à l'interieur de la div et ne changent pas sa taille*/
         margin-bottom: 20px;
+        .new {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 110px;
+          height: 30px;
+          position: absolute;
+          top: 15px; left: 215px; 
+          background-color:#99E2D0;
+          p {
+            color: rgb(49, 73, 30);
+            font-weight: bolder;
+          }
+
+        }
         .card__restaurant {
           .img {
             height: 200px;

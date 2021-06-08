@@ -51,5 +51,27 @@ img {
   width: 100%;
 }
 
+.loader {
+  width: 120px;
+  height: 120px;
+  background-size: contain;
+    
+    animation-duration: 2s;
+    animation-name: load-spinner;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes load-spinner {
+  0% { background-image: url("Maquettes Ohmyfood/images/images_loader/cocktail8.png");}
+  12% { background-image: url("Maquettes Ohmyfood/images/images_loader/cocktail1.png");}
+  25% { background-image: url("Maquettes Ohmyfood/images/images_loader/cocktail2.png");}
+  37% { background-image: url("Maquettes Ohmyfood/images/images_loader/cocktail3.png");}
+  50% { background-image: url("Maquettes Ohmyfood/images/images_loader/cocktail4.png");}
+  62% { background-image: url("Maquettes Ohmyfood/images/images_loader/cocktail5.png");}
+  75% { background-image: url("Maquettes Ohmyfood/images/images_loader/cocktail6.png");}
+  87% { background-image: url("Maquettes Ohmyfood/images/images_loader/cocktail7.png");}
+  100% { background-image: url("Maquettes Ohmyfood/images/images_loader/cocktail8.png");}
+}
 
 
