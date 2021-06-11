@@ -8,6 +8,7 @@ body {
 	justify-content: flex-start;
 	align-items: center;
 	.arrow {
+		color: black;
 		padding: 20px;
 	}
 	.resto-logo-smartphone {
@@ -93,11 +94,29 @@ body {
 			.text-intitule {
 				width: calc(85% - 100px);
 			}
+		}
 
+		// .bloc-intitule:nth-child(3){
+		// 	animation: appear 1s;
+		// }
 
-			
+		@keyframes appear {
+			from {
+				opacity:0;
+			}
+			to {
+				opacity:1;
+			}
 		}
 		.bloc-intitule {
+			@for $i from 1 through 5 {
+				&:nth-child(#{$i + 2}) {
+					animation: appear $i + 1 * 1s;
+				}
+			}
+			animation: appear 6s;
+	
+
 			display:flex;
 			align-items: center;
 			flex-direction: row;
@@ -110,6 +129,7 @@ body {
 			background-color: white;
 			border-radius: 20px;
 			overflow: hidden;
+			cursor: pointer;
 			.text-intitule {
 				display: flex;
 				height: 100%;
@@ -180,6 +200,11 @@ body {
 			padding: 0px 15px;
 			background: linear-gradient(to bottom, #FF79DA, #9356DC);
 			border-radius: 50px;
+			&:hover {
+				scale: 1.1;
+				filter: brightness(115%);
+				box-shadow: 1px 1px 10px grey;
+			  }
 			p {
 				text-align: center;
 				// vertical-align: middle;
@@ -188,6 +213,22 @@ body {
 				color: white;
 				// font-weight: bold;
 			}
+			
+		}
+	}
+}
+@media screen  and (min-width:600px) and (max-width:1000px) {
+	h2 {
+		padding-left: 30px;
+	}
+	.menu-parts {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.bloc-intitule {
+		width: 500px;
 		}
 	}
 }

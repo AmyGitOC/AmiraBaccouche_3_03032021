@@ -19,6 +19,9 @@
     .footer__links__link {
       margin-bottom: 20px;
       color: white;
+      &:hover {
+        color: #99E2D0;
+      }
     }
     span {
       margin-left: 15px; 

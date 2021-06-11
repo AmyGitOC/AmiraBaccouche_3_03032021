@@ -1,4 +1,14 @@
+@keyframes display-main {
+  to {
+    height: auto;
+  }
+}
+
 .main {
+  // height: 0px;  
+  animation: display-main  0s 3s forwards;
+  overflow: hidden;
+  height: 0px;
   .main__main-header {
     display: flex;
     flex-direction: column;
@@ -22,6 +32,11 @@
       p {
         color: white;
         // font-weight: bold;
+      }
+      &:hover {
+        scale: 1.1;
+        filter: brightness(115%);
+        box-shadow: 1px 1px 10px grey;
       }
     }
   }
@@ -51,6 +66,11 @@
       font-weight: bold;
       background-color: #faf4f4;
       border-radius: 25px;
+      &:hover {
+        scale: 1.1;
+        filter: brightness(115%);
+        box-shadow: 1px 1px 25px grey;
+      }
     }
     span {
       position: absolute;
@@ -90,6 +110,11 @@
         border-radius: 20px;
         box-sizing: border-box; /* Pour que padding et le border soient à l'interieur de la div et ne changent pas sa taille*/
         margin-bottom: 20px;
+        &:hover {
+          scale: 1.05;
+          filter: brightness(115%);
+          box-shadow: 1px 1px 25px grey;
+        }
         .new {
           display: flex;
           justify-content: center;
@@ -145,20 +170,9 @@
               -webkit-text-fill-color: transparent; 
               -moz-background-clip: text;
               -moz-text-fill-color: transparent;
+              // scale: 1.1;
+              // box-shadow: 1px 1px 10px grey;
             }
-            // i:hover {
-              // color: transparent;
-              // background-color: green;
-              // background: linear-gradient(to bottom, #FF79DA, #9356DC);
-              // overflow: hidden;
-              // cursor: pointer;
-              // transition: transform 250ms ease;
-              // animation: grow-plus 250ms;
-              // overflow: hidden;
-             // transition: transform 250ms ease;
-              // animation: grow-plus 250ms;
-              // overflow: hidden;
-            // }
           }
         }
       }
