@@ -23,6 +23,7 @@ body {
 .main-restaurants {
 	.img {
 		object-fit: cover;
+		height: 400px;
 	}	
 	.text-menu {
 		// position: absolute;
@@ -156,7 +157,7 @@ body {
 				display: flex;
 				align-self: flex-end;
 				margin: 0px;
-				width: 15%;
+				width: 45px;
 				// background-color: red;
 				font-weight: bold;
 				// border: 1px solid red;
@@ -192,6 +193,7 @@ body {
 		background-color: #F2F2F2;
 		vertical-align: middle;
 		.order-button {
+			transition: 0.5s;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -204,6 +206,8 @@ body {
 				scale: 1.1;
 				filter: brightness(115%);
 				box-shadow: 1px 1px 10px grey;
+				transition: 0.5s;
+        		cursor: pointer;
 			  }
 			p {
 				text-align: center;

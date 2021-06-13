@@ -25,6 +25,7 @@
       font-weight: 300;
     }
     .main-header__button-explore {
+      transition: 0.5s;
       width: auto;
       padding: 0px 15px;
       background: linear-gradient(to bottom, #FF79DA, #9356DC);
@@ -37,6 +38,8 @@
         scale: 1.1;
         filter: brightness(115%);
         box-shadow: 1px 1px 10px grey;
+        transition: ease-in-out 0.5s;
+        cursor: pointer;
       }
     }
   }
@@ -55,6 +58,7 @@
       margin-bottom: 30px;
     }
     .step {
+      transition: 0.5s;
       position: relative;
       height: 75px;
       display: flex;
@@ -70,6 +74,8 @@
         scale: 1.1;
         filter: brightness(115%);
         box-shadow: 1px 1px 25px grey;
+        transition: ease-in-out 0.5s;
+        cursor: pointer;
       }
     }
     span {
@@ -102,6 +108,7 @@
       align-items: center;
       width: 100%;
       .restaurant-container__card {
+        transition: 0.5s;
         position: relative;
         width: 340px;
         overflow: hidden;
@@ -111,9 +118,11 @@
         box-sizing: border-box; /* Pour que padding et le border soient à l'interieur de la div et ne changent pas sa taille*/
         margin-bottom: 20px;
         &:hover {
-          scale: 1.05;
+          scale: 1.07;
           filter: brightness(115%);
           box-shadow: 1px 1px 25px grey;
+          transition: ease-in-out 0.5s;
+          cursor: pointer;
         }
         .new {
           display: flex;
@@ -148,7 +157,7 @@
               // justify-content: space-around;
               // margin: 10px 20px;
             }
-            .coeur-vide, .coeur-plein{
+            .coeur-vide {
               position: absolute;
               right: 30px; 
               top: 20px;
@@ -158,18 +167,26 @@
               text-align: center;
             }
             .coeur-plein {
+              position: absolute;
+              right: 30px; 
+              top: 19px;
+              transform: translate(50%, -50%);
+              color: rgb(20, 20, 20);
+              text-align: center;
               color:  transparent;
               font-size: 26px;
             }
-            .coeur-plein:hover {
+            .coeur-plein:hover { 
               background-image: linear-gradient(to top, #FF79DA, #9356DC);
-              background-size: 100%;
-              background-repeat: repeat;
+              // background-size: 100%;
+              // background-repeat: repeat;
               background-clip: text;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent; 
-              -moz-background-clip: text;
-              -moz-text-fill-color: transparent;
+              cursor: pointer;
+              transition: ease-in-out 1s;
+              // -webkit-background-clip: text;
+              // -webkit-text-fill-color: transparent; 
+              // -moz-background-clip: text;
+              // -moz-text-fill-color: transparent;
               // scale: 1.1;
               // box-shadow: 1px 1px 10px grey;
             }

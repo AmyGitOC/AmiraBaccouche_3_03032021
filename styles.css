@@ -118,6 +118,8 @@
 }
 
 .main .main__main-header .main-header__button-explore {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   width: auto;
   padding: 0px 15px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
@@ -135,6 +137,9 @@
           filter: brightness(115%);
   -webkit-box-shadow: 1px 1px 10px grey;
           box-shadow: 1px 1px 10px grey;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
 }
 
 .main .Main__resa-steps h2 {
@@ -161,6 +166,8 @@
 }
 
 .main .Main__resa-steps .step {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   position: relative;
   height: 75px;
   display: -webkit-box;
@@ -187,6 +194,9 @@
           filter: brightness(115%);
   -webkit-box-shadow: 1px 1px 25px grey;
           box-shadow: 1px 1px 25px grey;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
 }
 
 .main .Main__resa-steps span {
@@ -236,6 +246,8 @@
 }
 
 .main .main__restaurant-container .restaurant-container__cards .restaurant-container__card {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   position: relative;
   width: 340px;
   overflow: hidden;
@@ -250,11 +262,14 @@
 }
 
 .main .main__restaurant-container .restaurant-container__cards .restaurant-container__card:hover {
-  scale: 1.05;
+  scale: 1.07;
   -webkit-filter: brightness(115%);
           filter: brightness(115%);
   -webkit-box-shadow: 1px 1px 25px grey;
           box-shadow: 1px 1px 25px grey;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
 }
 
 .main .main__restaurant-container .restaurant-container__cards .restaurant-container__card .new {
@@ -296,7 +311,7 @@
   color: black;
 }
 
-.main .main__restaurant-container .restaurant-container__cards .restaurant-container__card .card__restaurant .restaurant__text .coeur-vide, .main .main__restaurant-container .restaurant-container__cards .restaurant-container__card .card__restaurant .restaurant__text .coeur-plein {
+.main .main__restaurant-container .restaurant-container__cards .restaurant-container__card .card__restaurant .restaurant__text .coeur-vide {
   position: absolute;
   right: 30px;
   top: 20px;
@@ -308,6 +323,13 @@
 }
 
 .main .main__restaurant-container .restaurant-container__cards .restaurant-container__card .card__restaurant .restaurant__text .coeur-plein {
+  position: absolute;
+  right: 30px;
+  top: 19px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  color: #141414;
+  text-align: center;
   color: transparent;
   font-size: 26px;
 }
@@ -315,13 +337,10 @@
 .main .main__restaurant-container .restaurant-container__cards .restaurant-container__card .card__restaurant .restaurant__text .coeur-plein:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
-  background-size: 100%;
-  background-repeat: repeat;
   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+  cursor: pointer;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
 }
 
 .footer {
@@ -404,6 +423,7 @@ body {
 .main-restaurants .img {
   -o-object-fit: cover;
      object-fit: cover;
+  height: 400px;
 }
 
 .main-restaurants .text-menu {
@@ -604,7 +624,7 @@ body {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin: 0px;
-  width: 15%;
+  width: 45px;
   font-weight: bold;
 }
 
@@ -655,6 +675,8 @@ body {
 }
 
 .main-restaurants .pre-footer .order-button {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -678,6 +700,9 @@ body {
           filter: brightness(115%);
   -webkit-box-shadow: 1px 1px 10px grey;
           box-shadow: 1px 1px 10px grey;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .main-restaurants .pre-footer .order-button p {
@@ -1176,10 +1201,17 @@ img {
   overflow: hidden;
 }
 
+.loader-container .loader-logo {
+  font-family: shrikhand;
+  font-size: x-large;
+  margin-right: 2px;
+  padding-top: 30px;
+}
+
 .loader-container .loader {
-  width: 100px;
-  height: 120px;
+  width: 120px;
+  height: 140px;
   background-image: url("Maquettes Ohmyfood/images/images_loader/loader.gif");
-  background-size: contain;
+  background-size: cover;
 }
 /*# sourceMappingURL=styles.css.map */

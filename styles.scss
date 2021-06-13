@@ -61,11 +61,17 @@ img {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  .loader-logo {
+    font-family: shrikhand;
+    font-size: x-large;
+    margin-right: 2px;
+    padding-top: 30px;
+  }
   .loader {
-    width: 100px;
-    height: 120px;
+    width: 120px;
+    height: 140px;
     background-image: url("Maquettes Ohmyfood/images/images_loader/loader.gif");
-    background-size: contain;
+    background-size: cover;
   }
 }
 
