@@ -10,6 +10,9 @@ body {
 	.arrow {
 		color: black;
 		padding: 20px;
+		.fa-arrow-left {
+			color: black;
+		}
 	}
 	.resto-logo-smartphone {
 		width: 80%;
@@ -67,6 +70,8 @@ body {
 			-webkit-text-fill-color: transparent; 
 			-moz-background-clip: text;
 			-moz-text-fill-color: transparent;
+			scale: 1.1;
+			transition: 0.3s;
 		  }
 		h3 {
 			margin-top: 40px;

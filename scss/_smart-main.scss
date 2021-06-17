@@ -159,30 +159,32 @@
             }
             .coeur-vide {
               position: absolute;
-              right: 30px; 
+              right: 33px; 
               top: 20px;
               transform: translate(50%, -50%);
-              font-size: 22px;
+              font-size: 18px;
               color: rgb(20, 20, 20);
               text-align: center;
             }
             .coeur-plein {
               position: absolute;
-              right: 30px; 
-              top: 19px;
+              right: 34px; 
+              top: 20px;
               transform: translate(50%, -50%);
               color: rgb(20, 20, 20);
               text-align: center;
               color:  transparent;
-              font-size: 26px;
+              font-size: 23px;
             }
             .coeur-plein:hover { 
               background-image: linear-gradient(to top, #FF79DA, #9356DC);
+              color: linear-gradient(to top, #FF79DA, #9356DC);
               // background-size: 100%;
               // background-repeat: repeat;
               background-clip: text;
               cursor: pointer;
-              transition: ease-in-out 1s;
+              scale: 1.1;
+              transition: 0.3s;
               // -webkit-background-clip: text;
               // -webkit-text-fill-color: transparent; 
               // -moz-background-clip: text;

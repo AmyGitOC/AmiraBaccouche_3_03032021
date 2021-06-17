@@ -313,34 +313,36 @@
 
 .main .main__restaurant-container .restaurant-container__cards .restaurant-container__card .card__restaurant .restaurant__text .coeur-vide {
   position: absolute;
-  right: 30px;
+  right: 33px;
   top: 20px;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
-  font-size: 22px;
+  font-size: 18px;
   color: #141414;
   text-align: center;
 }
 
 .main .main__restaurant-container .restaurant-container__cards .restaurant-container__card .card__restaurant .restaurant__text .coeur-plein {
   position: absolute;
-  right: 30px;
-  top: 19px;
+  right: 34px;
+  top: 20px;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
   color: #141414;
   text-align: center;
   color: transparent;
-  font-size: 26px;
+  font-size: 23px;
 }
 
 .main .main__restaurant-container .restaurant-container__cards .restaurant-container__card .card__restaurant .restaurant__text .coeur-plein:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
+  color: linear-gradient(to top, #FF79DA, #9356DC);
   background-clip: text;
   cursor: pointer;
-  -webkit-transition: ease-in-out 1s;
-  transition: ease-in-out 1s;
+  scale: 1.1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .footer {
@@ -408,6 +410,10 @@ body {
 .resto-header-smartphone .arrow {
   color: black;
   padding: 20px;
+}
+
+.resto-header-smartphone .arrow .fa-arrow-left {
+  color: black;
 }
 
 .resto-header-smartphone .resto-logo-smartphone {
@@ -483,6 +489,9 @@ body {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  scale: 1.1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .main-restaurants .text-menu h3 {
