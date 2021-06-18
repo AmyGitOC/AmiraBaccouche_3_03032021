@@ -171,20 +171,30 @@
               right: 34px; 
               top: 20px;
               transform: translate(50%, -50%);
-              color: rgb(20, 20, 20);
+              // color: rgb(20, 20, 20);
               text-align: center;
-              color:  transparent;
+              color: transparent;
               font-size: 23px;
             }
+            @keyframes appear {
+              from {
+                opacity:0;
+              }
+              to {
+                opacity:1;
+              }
+            }
+            
             .coeur-plein:hover { 
+              cursor: pointer;
+              // animation: appear 2s;
+              background-clip: text;
               background-image: linear-gradient(to top, #FF79DA, #9356DC);
               color: linear-gradient(to top, #FF79DA, #9356DC);
               // background-size: 100%;
               // background-repeat: repeat;
-              background-clip: text;
-              cursor: pointer;
-              scale: 1.1;
-              transition: 0.3s;
+              // transition: 0.3s;
+              
               // -webkit-background-clip: text;
               // -webkit-text-fill-color: transparent; 
               // -moz-background-clip: text;

@@ -328,21 +328,35 @@
   top: 20px;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
-  color: #141414;
   text-align: center;
   color: transparent;
   font-size: 23px;
 }
 
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .main .main__restaurant-container .restaurant-container__cards .restaurant-container__card .card__restaurant .restaurant__text .coeur-plein:hover {
+  cursor: pointer;
+  background-clip: text;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   color: linear-gradient(to top, #FF79DA, #9356DC);
-  background-clip: text;
-  cursor: pointer;
-  scale: 1.1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .footer {
@@ -521,15 +535,6 @@ body {
   width: calc(85% - 100px);
 }
 
-@-webkit-keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes appear {
   from {
     opacity: 0;
@@ -647,8 +652,8 @@ body {
   width: 15%;
   height: 150%;
   margin-right: -15%;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
   background: #99E2D0;
