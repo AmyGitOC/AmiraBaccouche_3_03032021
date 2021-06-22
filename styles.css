@@ -132,7 +132,8 @@
 }
 
 .main .main__main-header .main-header__button-explore:hover {
-  scale: 1.1;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
   -webkit-filter: brightness(115%);
           filter: brightness(115%);
   -webkit-box-shadow: 1px 1px 10px grey;
@@ -189,7 +190,8 @@
 }
 
 .main .Main__resa-steps .step:hover {
-  scale: 1.1;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
   -webkit-filter: brightness(115%);
           filter: brightness(115%);
   -webkit-box-shadow: 1px 1px 25px grey;
@@ -262,7 +264,8 @@
 }
 
 .main .main__restaurant-container .restaurant-container__cards .restaurant-container__card:hover {
-  scale: 1.07;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
   -webkit-filter: brightness(115%);
           filter: brightness(115%);
   -webkit-box-shadow: 1px 1px 25px grey;
@@ -713,7 +716,8 @@ body {
 }
 
 .main-restaurants .pre-footer .order-button:hover {
-  scale: 1.1;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
   -webkit-filter: brightness(115%);
           filter: brightness(115%);
   -webkit-box-shadow: 1px 1px 10px grey;

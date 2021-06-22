@@ -35,7 +35,7 @@
         // font-weight: bold;
       }
       &:hover {
-        scale: 1.1;
+        transform: scale(1.07);
         filter: brightness(115%);
         box-shadow: 1px 1px 10px grey;
         transition: ease-in-out 0.5s;
@@ -71,7 +71,7 @@
       background-color: #faf4f4;
       border-radius: 25px;
       &:hover {
-        scale: 1.1;
+        transform: scale(1.07);
         filter: brightness(115%);
         box-shadow: 1px 1px 25px grey;
         transition: ease-in-out 0.5s;
@@ -118,7 +118,7 @@
         box-sizing: border-box; /* Pour que padding et le border soient à l'interieur de la div et ne changent pas sa taille*/
         margin-bottom: 20px;
         &:hover {
-          scale: 1.07;
+          transform: scale(1.07);
           filter: brightness(115%);
           box-shadow: 1px 1px 25px grey;
           transition: ease-in-out 0.5s;

@@ -208,7 +208,7 @@ body {
 			background: linear-gradient(to bottom, #FF79DA, #9356DC);
 			border-radius: 50px;
 			&:hover {
-				scale: 1.1;
+				transform: scale(1.07);
 				filter: brightness(115%);
 				box-shadow: 1px 1px 10px grey;
 				transition: 0.5s;
