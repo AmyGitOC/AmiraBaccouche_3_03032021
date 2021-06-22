@@ -195,10 +195,10 @@
               // background-repeat: repeat;
               // transition: 0.3s;
               
-              // -webkit-background-clip: text;
-              // -webkit-text-fill-color: transparent; 
-              // -moz-background-clip: text;
-              // -moz-text-fill-color: transparent;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent; 
+              -moz-background-clip: text;
+              -moz-text-fill-color: transparent;
               // scale: 1.1;
               // box-shadow: 1px 1px 10px grey;
             }
