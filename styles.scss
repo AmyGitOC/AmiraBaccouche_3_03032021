@@ -57,6 +57,7 @@ img {
   animation: hide-loader 0s 3s forwards;
   width: 100%;
   display: flex;
+  flex-direction: row;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -70,8 +71,24 @@ img {
   .loader {
     width: 120px;
     height: 140px;
-    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader.gif");
+    // background-image: url("Maquettes_Ohmyfood/images/images_loader/loader.gif");
     background-size: cover;
+    // background-size: contain;
+  
+      animation-duration: 3s;
+      animation-name: load-spinner;
+      animation-iteration-count: infinite;
+  }
+  @keyframes load-spinner {
+    0% { background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail8.png");}
+    12% { background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail1.png");}
+    25% { background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail2.png");}
+    37% { background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail3.png");}
+    50% { background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail4.png");}
+    62% { background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail5.png");}
+    75% { background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail6.png");}
+    87% { background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail7.png");}
+    // 100% { background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail8.png");}
   }
 }
 

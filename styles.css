@@ -1213,6 +1213,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1233,7 +1237,66 @@ img {
 .loader-container .loader {
   width: 120px;
   height: 140px;
-  background-image: url("Maquettes_Ohmyfood/images/images_loader/loader.gif");
   background-size: cover;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: load-spinner;
+          animation-name: load-spinner;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes load-spinner {
+  0% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail8.png");
+  }
+  12% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail1.png");
+  }
+  25% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail2.png");
+  }
+  37% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail3.png");
+  }
+  50% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail4.png");
+  }
+  62% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail5.png");
+  }
+  75% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail6.png");
+  }
+  87% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail7.png");
+  }
+}
+
+@keyframes load-spinner {
+  0% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail8.png");
+  }
+  12% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail1.png");
+  }
+  25% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail2.png");
+  }
+  37% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail3.png");
+  }
+  50% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail4.png");
+  }
+  62% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail5.png");
+  }
+  75% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail6.png");
+  }
+  87% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail7.png");
+  }
 }
 /*# sourceMappingURL=styles.css.map */
