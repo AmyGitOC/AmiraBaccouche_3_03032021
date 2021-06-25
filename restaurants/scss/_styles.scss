@@ -76,10 +76,6 @@ body {
 		h3 {
 			margin-top: 40px;
 			font-weight: normal;
-			// text-decoration: underline;
-			// text-decoration-color: #99E2D0;
-			// text-decoration-thickness: 5px;
-			// text-underline-position: under;
 		}
 		.underline{
 			width: 40px;
@@ -101,10 +97,6 @@ body {
 				width: calc(85% - 100px);
 			}
 		}
-
-		// .bloc-intitule:nth-child(3){
-		// 	animation: appear 1s;
-		// }
 
 		@keyframes appear {
 			from {
@@ -225,6 +217,11 @@ body {
 			
 		}
 	}
+}
+@media screen  and (min-width:1200px) {
+	.bloc-intitule {
+		width: auto;
+		}
 }
 @media screen  and (min-width:600px) and (max-width:1000px) {
 	h2 {

@@ -734,6 +734,12 @@ body {
   color: white;
 }
 
+@media screen and (min-width: 1200px) {
+  .bloc-intitule {
+    width: auto;
+  }
+}
+
 @media screen and (min-width: 600px) and (max-width: 1000px) {
   h2 {
     padding-left: 30px;
@@ -1238,8 +1244,8 @@ img {
   width: 120px;
   height: 140px;
   background-size: cover;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-name: load-spinner;
           animation-name: load-spinner;
   -webkit-animation-iteration-count: infinite;
@@ -1271,6 +1277,9 @@ img {
   87% {
     background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail7.png");
   }
+  100% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail8.png");
+  }
 }
 
 @keyframes load-spinner {
@@ -1297,6 +1306,9 @@ img {
   }
   87% {
     background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail7.png");
+  }
+  100% {
+    background-image: url("Maquettes_Ohmyfood/images/images_loader/loader_cocktail8.png");
   }
 }
 /*# sourceMappingURL=styles.css.map */
