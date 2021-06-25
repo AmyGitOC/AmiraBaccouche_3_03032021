@@ -218,11 +218,7 @@ body {
 		}
 	}
 }
-@media screen  and (min-width:1200px) {
-	.bloc-intitule {
-		width: auto;
-		}
-}
+
 @media screen  and (min-width:600px) and (max-width:1000px) {
 	h2 {
 		padding-left: 30px;
@@ -271,6 +267,10 @@ body {
 	padding-bottom: 0px !important;
 	height: 200px !important;
 	}
-
+	@media screen  and (min-width:1200px) {
+		.bloc-intitule {
+			width: auto;
+			}
+	}
 
 }
