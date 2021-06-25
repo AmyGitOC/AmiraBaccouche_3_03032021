@@ -267,10 +267,9 @@ body {
 	padding-bottom: 0px !important;
 	height: 200px !important;
 	}
-	@media screen  and (min-width:1200px) {
-		.bloc-intitule {
-			width: auto;
-			}
-	}
-
+}
+@media screen  and (min-width:1200px) {
+	.bloc-intitule {
+		width: auto;
+		}
 }
